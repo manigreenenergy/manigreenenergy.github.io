@@ -104,7 +104,8 @@ position: absolute;
 */
 
 ::-webkit-scrollbar-thumb {
-    background-color: #df1a14;
+    background-color: #a9a8ba;
+/*    #df1a14;*/
 }
 
 .white-block {
@@ -1260,6 +1261,7 @@ ul.dotted-list li {
     position: relative;
     overflow: hidden;
     background-color: #004e8f;
+/*    #004e8f;*/
 }
 
 header {
@@ -1286,7 +1288,8 @@ header {
 }
 
 .service-item-full-bg-color {
-    background-color: rgba(0,80,149,0.8);
+    background-color: #0e0957;
+/*    rgba(0,80,149,0.8);*/
     z-index: 1;
     position: absolute;
     left: 0;
@@ -1330,15 +1333,19 @@ header {
 }
 
 .service-bg-0 {
-    background-image: url(../images/1-Refineries.jpg);
+
+/*  TODO revert this
+  background-image: url(../images/1-Refineries.jpg);*/
 }
 
 .service-bg-1 {
-    background-image: url(../images/2-HP-Retail-Petrol-Pumps.jpg);
+/*  TODO revert this
+  background-image: url(../images/2-HP-Retail-Petrol-Pumps.jpg);*/
 }
 
 .service-bg-2 {
-    background-image: url(../images/3-HP-Gas-LPG.jpg);
+/* TODO revert this
+   background-image: url(../images/3-HP-Gas-LPG.jpg);*/
 }
 
 .service-bg-3 {
