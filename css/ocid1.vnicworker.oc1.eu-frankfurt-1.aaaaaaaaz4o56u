@@ -1,0 +1,186 @@
+ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaaz4o56uknhqehyeyut43mjdkqnoy5aglby3dhjsyb5ypdw5c2525a
+ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrhpkugfycpcy4saiuvhjll66z5mco722yayt35tfp52zxbduza3aa
+
+
+
+oci raw-request --profile DEFAULT --auth security_token --http-method GET --target-uri=https://iaas.eu-frankfurt-1.oraclecloud.com/20160918/vnicAttachments/ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrhpkugfycpcy4saiuvhjll66z5mco722yayt35tfp52zxbduza3aa
+
+{
+  "data": {
+    "availabilityDomain": "tjoa:EU-FRANKFURT-1-AD-1",
+    "compartmentId": "ocid1.compartment.oc1..aaaaaaaa55zhyyyqbzsmdz2t7b56pwqfoivnnpnxrfyz7bhorw6hogqicmvq",
+    "displayName": "vnicattachment20240416075609",
+    "id": "ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrhpkugfycpcy4saiuvhjll66z5mco722yayt35tfp52zxbduza3aa",
+    "instanceId": "ocid1.instance.oc1.eu-frankfurt-1.antheljrhpkugfycencmwaljq62vli3irzerlpxd4blxeyr6yd7wfuezwrla",
+    "lifecycleState": "ATTACHED",
+    "nicIndex": null,
+    "subnetId": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaadgn7zpbn523puxbojujdxsc5vfs6i5yucshwwgr5r63ehhdf3ota",
+    "timeCreated": "2024-04-16T07:56:09.357Z",
+    "vlanId": null,
+    "vlanTag": 3938,
+    "vnicId": "ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaatcj5jpx6xg2b4hhxd5dlx5c3zido7hnzut3c4ibqtwnmucdtdxfa"
+  },
+  "headers": {
+    "Connection": "keep-alive",
+    "Content-Length": "742",
+    "Content-Type": "application/json",
+    "Date": "Tue, 16 Apr 2024 08:21:43 GMT",
+    "ETag": "112e9323097558e8ec59c9a46658e5b931784268d08c4de4632bfc1005f5ed3a",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains;",
+    "X-Content-Type-Options": "nosniff",
+    "opc-request-id": "88E5B202ACB341D0BC7D37D4FC67DCD8/DF784D794830D18D48635E37639849AB/739EB2803C9B1F29EBDA8D0488134DC6"
+  },
+  "status": "200 OK"
+}
+
+oci raw-request --profile DEFAULT --auth security_token --http-method DELETE --target-uri=$FRA_DEV_MP_ENDPOINT/20180828/workerVnicAttachment/ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrhpkugfycpcy4saiuvhjll66z5mco722yayt35tfp52zxbduza3aa
+{
+  "data": "",
+  "headers": {
+    "Content-Type": "application/octet-stream",
+    "Date": "Tue, 16 Apr 2024 09:50:32 GMT",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains;",
+    "X-Content-Type-Options": "nosniff",
+    "opc-request-id": "3E575DFF20184D2397FEB82A5159B928/9378191F7D5CA86717D3E45823409112/6B9F049EB74EAC6A42C4679A0137DB94"
+  },
+  "status": "204 No Content"
+}
+➜  serverless-case git:(update-slo) ✗ oci raw-request --profile DEFAULT --auth security_token --http-method GET --target-uri=https://iaas.eu-frankfurt-1.oraclecloud.com/20160918/vnicAttachments/ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrhpkugfycpcy4saiuvhjll66z5mco722yayt35tfp52zxbduza3aa
+
+{
+  "data": {
+    "availabilityDomain": "tjoa:EU-FRANKFURT-1-AD-1",
+    "compartmentId": "ocid1.compartment.oc1..aaaaaaaa55zhyyyqbzsmdz2t7b56pwqfoivnnpnxrfyz7bhorw6hogqicmvq",
+    "displayName": "vnicattachment20240416075609",
+    "id": "ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrhpkugfycpcy4saiuvhjll66z5mco722yayt35tfp52zxbduza3aa",
+    "instanceId": "ocid1.instance.oc1.eu-frankfurt-1.antheljrhpkugfycencmwaljq62vli3irzerlpxd4blxeyr6yd7wfuezwrla",
+    "lifecycleState": "DETACHING",
+    "nicIndex": null,
+    "subnetId": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaadgn7zpbn523puxbojujdxsc5vfs6i5yucshwwgr5r63ehhdf3ota",
+    "timeCreated": "2024-04-16T07:56:09.357Z",
+    "vlanId": null,
+    "vlanTag": 3938,
+    "vnicId": "ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaatcj5jpx6xg2b4hhxd5dlx5c3zido7hnzut3c4ibqtwnmucdtdxfa"
+  },
+  "headers": {
+    "Connection": "keep-alive",
+    "Content-Length": "743",
+    "Content-Type": "application/json",
+    "Date": "Tue, 16 Apr 2024 09:50:58 GMT",
+    "ETag": "2798c2c28190b18ab5c22b54a9586268aecdfceaed16fd4e58b8042b25b4c5ac",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains;",
+    "X-Content-Type-Options": "nosniff",
+    "opc-request-id": "47B4922598544EA98A72F5A25F309888/923463AF64F391BA599DD042D5383A51/36D3DD480A7BEB23E1ACBCE43F3737F2"
+  },
+  "status": "200 OK"
+}
+
+oci raw-request --profile DEFAULT --auth security_token --http-method GET --target-uri=https://iaas.eu-frankfurt-1.oraclecloud.com/20160918/vnicAttachments/ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrhpkugfycpcy4saiuvhjll66z5mco722yayt35tfp52zxbduza3aa
+
+{
+  "data": {
+    "availabilityDomain": "tjoa:EU-FRANKFURT-1-AD-1",
+    "compartmentId": "ocid1.compartment.oc1..aaaaaaaa55zhyyyqbzsmdz2t7b56pwqfoivnnpnxrfyz7bhorw6hogqicmvq",
+    "displayName": "vnicattachment20240416075609",
+    "id": "ocid1.vnicattachment.oc1.eu-frankfurt-1.antheljrhpkugfycpcy4saiuvhjll66z5mco722yayt35tfp52zxbduza3aa",
+    "instanceId": "ocid1.instance.oc1.eu-frankfurt-1.antheljrhpkugfycencmwaljq62vli3irzerlpxd4blxeyr6yd7wfuezwrla",
+    "lifecycleState": "DETACHED",
+    "nicIndex": null,
+    "subnetId": "ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaadgn7zpbn523puxbojujdxsc5vfs6i5yucshwwgr5r63ehhdf3ota",
+    "timeCreated": "2024-04-16T07:56:09.357Z",
+    "vlanId": null,
+    "vlanTag": 3938,
+    "vnicId": "ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaatcj5jpx6xg2b4hhxd5dlx5c3zido7hnzut3c4ibqtwnmucdtdxfa"
+  },
+  "headers": {
+    "Connection": "keep-alive",
+    "Content-Length": "742",
+    "Content-Type": "application/json",
+    "Date": "Tue, 16 Apr 2024 09:51:46 GMT",
+    "ETag": "27a5d72ea7328a790af809ac22bcfbf344f37e03c30eaac6d87e850bfaea1e09",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains;",
+    "X-Content-Type-Options": "nosniff",
+    "opc-request-id": "272F197798EA4AA78144A50EC3041C6B/FCAD9E8678577325E305DD742042B0B5/5D8FBD241BC61F35E4FF9298FB582528"
+  },
+  "status": "200 OK"
+}
+
+
+
+
+##############################
+
+oci raw-request --profile DEFAULT --auth security_token --http-method GET --target-uri=https://iaas.eu-frankfurt-1.oraclecloud.com/20160918/vnicWorkers/ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaaz4o56uknhqehyeyut43mjdkqnoy5aglby3dhjsyb5ypdw5c2525a
+
+{
+  "data": {
+    "compartmentId": "ocid1.compartment.oc1..aaaaaaaa55zhyyyqbzsmdz2t7b56pwqfoivnnpnxrfyz7bhorw6hogqicmvq",
+    "displayName": "vnicworker20240416075608",
+    "id": "ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaaz4o56uknhqehyeyut43mjdkqnoy5aglby3dhjsyb5ypdw5c2525a",
+    "isDraining": false,
+    "isEnabled": true,
+    "lifecycleState": "AVAILABLE",
+    "serviceVnicId": "ocid1.vnic.oc1.eu-frankfurt-1.abtheljrdyztrarmugs2j3cw3oeyor5g5z2s6cpcnks7s773ejdz7n6ww5sq",
+    "workerInstanceId": "ocid1.instance.oc1.eu-frankfurt-1.antheljrhpkugfycdelyevc2f4nlfdbuvx477xum2a5ai7iyxnmsxd7zfhxa",
+    "workerIpsConfig": [
+      {
+        "id": "ocid1.privateip.oc1.eu-frankfurt-1.abtheljrvevzm3zvonoupjxcgg2vazcjc73c2n6kokadwfvf3oiz4b35zrxq",
+        "ipAddress": "10.0.10.93",
+        "natIpAddress": "169.254.244.197"
+      }
+    ],
+    "workerMacAddress": "02:00:17:20:6F:D2",
+    "workerNicIndex": 1,
+    "workerPrimaryIpConfig": {
+      "id": "ocid1.privateip.oc1.eu-frankfurt-1.abtheljrvevzm3zvonoupjxcgg2vazcjc73c2n6kokadwfvf3oiz4b35zrxq",
+      "ipAddress": "10.0.10.93",
+      "natIpAddress": "169.254.244.197"
+    },
+    "workerVlanTag": 2327
+  },
+  "headers": {
+    "Connection": "keep-alive",
+    "Content-Length": "987",
+    "Content-Type": "application/json",
+    "Date": "Tue, 16 Apr 2024 09:57:49 GMT",
+    "ETag": "30f7ac0d",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains;",
+    "X-Content-Type-Options": "nosniff",
+    "opc-request-id": "640CA6820D4A4C399774D07856F16D04/2B5205C6EEF92AC36D80B5213E16EA6B/2B2A99584E4D598207B0325CEFC0492E"
+  },
+  "status": "200 OK"
+}
+
+
+
+oci raw-request --profile DEFAULT --auth security_token --http-method DELETE --target-uri=$FRA_DEV_MP_ENDPOINT/20180828/vnic/ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaaz4o56uknhqehyeyut43mjdkqnoy5aglby3dhjsyb5ypdw5c2525a
+
+{
+  "data": "",
+  "headers": {
+    "Content-Type": "application/octet-stream",
+    "Date": "Tue, 16 Apr 2024 10:16:55 GMT",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains;",
+    "X-Content-Type-Options": "nosniff",
+    "opc-request-id": "F2AB9B169E9042F4BF971382B5B754A5/9C82A1AF1CA11E7D139F21866CD820FD/E7179726AB3210D575CB963880CF658A"
+  },
+  "status": "204 No Content"
+}
+➜  serverless-case git:(update-slo) ✗ oci raw-request --profile DEFAULT --auth security_token --http-method GET --target-uri=https://iaas.eu-frankfurt-1.oraclecloud.com/20160918/vnicWorkers/ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaaz4o56uknhqehyeyut43mjdkqnoy5aglby3dhjsyb5ypdw5c2525a
+
+{
+  "data": {
+    "code": "NotAuthorizedOrNotFound",
+    "message": "Either VNIC Worker with ID ocid1.vnicworker.oc1.eu-frankfurt-1.aaaaaaaaz4o56uknhqehyeyut43mjdkqnoy5aglby3dhjsyb5ypdw5c2525a does not exist or you are not authorized to access it."
+  },
+  "headers": {
+    "Connection": "keep-alive",
+    "Content-Length": "236",
+    "Content-Type": "application/json",
+    "Date": "Tue, 16 Apr 2024 10:17:37 GMT",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains;",
+    "X-Content-Type-Options": "nosniff",
+    "opc-request-id": "E76A6BB06F534CC48A1B229FF0A488A7/9A54F3173C836C06CA382BACF65DAC5A/A3D94737989E47407C2D7DAEE90D0FD2"
+  },
+  "status": "404 Not Found"
+}
