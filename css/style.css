@@ -1169,7 +1169,21 @@ select {
     
 }
 
+.solutions {
+    max-width: 100%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 
+/*.solutions-text {
+    /*text-align: center;
+    position: relative;
+    vertical-align: middle;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
 .updates-item {
     background-color: #fff;
     height: 100%;
@@ -1264,6 +1278,19 @@ ul.dotted-list li {
 /*    #004e8f;*/
 }
 
+.service-section-grey {
+    position: relative;
+    overflow: hidden;
+    background-color: #ebeae8;
+/*    #004e8f;*/
+}
+
+.service-section-light-blue {
+    position: relative;
+    overflow: hidden;
+    background-color: #578fff;
+/*    #004e8f;*/
+}
 header {
     background-color: #001344;
 }
