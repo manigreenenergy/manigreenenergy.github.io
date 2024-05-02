@@ -1196,22 +1196,31 @@ select {
 }
 
 .logo-container {
-  display: flex;  /* Use flexbox to position elements */
-  align-items: center;  /* Vertically center items */
-  
+  background-image: url(../images/logo/logo-color.png);
+  width : 90%;
+  height: 0%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 40%; /* (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) */
+
+  align-items: center;  
 }
 
 .tagline {
-  margin-left: 10px; /* Adjust the margin to position tagline */
+  margin-left: 100px; /* Adjust the margin to position tagline */
 }
 
+
+.vision{
+    text-align: center;
+}
 .about-heading {
 
     background-image: url(../images/logo/logo-color.png);
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
-    height: 40px;
 
 }
 

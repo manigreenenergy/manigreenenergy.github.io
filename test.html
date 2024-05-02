@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        max-height: 80vh; /* maximum height of 80% of viewport height */
+    }
+    .logo-column {
+        flex: 0 0 60%;
+        text-align: center;
+        position: relative;
+    }
+    .logo-image {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+    }
+    .tagline-column {
+        flex: 0 0 40%;
+        text-align: left;
+        padding-left: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 2em;
+        margin: 0;
+        line-height: 1.2;
+    }
+    @media only screen and (max-width: 768px) {
+        .logo-column {
+            flex: 0 0 100%;
+            order: 2;
+        }
+        .tagline-column {
+            flex: 0 0 100%;
+            order: 1;
+            padding-left: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="logo-column">
+            <div class="logo-image">
+                <img src="images/logo/logo-color.png" alt="Logo" id="logo">
+            </div>
+            <div class="tagline-column">
+                <h1>Your Logo<br>Tagline Goes Here</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
