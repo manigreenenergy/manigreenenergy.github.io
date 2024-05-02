@@ -1195,6 +1195,31 @@ select {
 
 }
 
+.logo-container {
+  display: flex;  /* Use flexbox to position elements */
+  align-items: center;  /* Vertically center items */
+  
+}
+
+.tagline {
+  margin-left: 10px; /* Adjust the margin to position tagline */
+}
+
+.about-heading {
+
+    background-image: url(../images/logo/logo-color.png);
+    display: flex;
+/*    background-size: contain;*/
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 100%;
+    
+
+    
+    background-attachment: fixed;
+
+}
+
 /*.solutions-text {
     /*text-align: center;
     position: relative;
