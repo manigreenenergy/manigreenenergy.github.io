@@ -1,0 +1,72 @@
+.footer {
+            background-color: #003366;
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .footer .left, .footer .center, .footer .right {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        .footer .left {
+            text-align: center;
+        }
+        .footer .left img {
+            width: 200px; /* Adjust the size as needed */
+            margin-bottom: 20px;
+        }
+        .footer .left .social-icons img {
+            width: 24px;
+            margin-right: 10px;
+        }
+        .footer .center ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer .center ul li {
+            margin-bottom: 10px;
+        }
+        .footer .center ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer .center ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer .right form input[type="email"] {
+            width: calc(100% - 110px);
+            padding: 10px;
+            border: 1px solid #cc9900;
+            border-radius: 5px 0 0 5px;
+        }
+        .footer .right form button {
+            width: 90px;
+            padding: 10px;
+            background-color: #cc9900;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .footer p, .footer .right form input, .footer .right form button {
+/*            color: #fff;*/
+        }
+
+        .footer  h2 {
+            color: #cc9900;
+        }
+
+        .footer  h1 {
+            color: #cc9900;
+        }
+@media (max-width: 768px) {
+            
+            .footer .left, .footer .center, .footer .right {
+                min-width: 100%;
+            }
+        }
+    

@@ -1,0 +1,104 @@
+You’re given an array of numbers. You need to determine if the array is ‘gold’.
+
+The array is considered gold if all numbers in the array are used to form any number of increasing consecutive sequences of size 3 [x, x+1, x+2].
+Each number can only be used once.
+  
+[1, 2, 3, 4, 5, 6]
+
+i = 0, 1, 2,3,  4, 5, 
+[1, 2, 3]  
+[]
+
+
+
+[1, 2, 3, 5, 6, 7]
+
+[1, 2, 3, 4, 5, 7]
+
+
+[1, 2, 3, 4, 2, 3]
+[1, 2, 3, 4, 3, 2]
+[0, 4, 5]
+[1, 2, 3]
+
+i = 0, 1, 2, 3, 4, 5
+[1, ] 
+
+ [4, ]
+
+[1, 2, 3, 4, 2, 3] => [1, 2, 2, 3, 3, 4]
+
+1-> 1, 0
+2 -> 2, 1, 0
+3-> 2, 1, 0
+4 -> 1, 0 
+
+  [4, 3, 2  ]
+  
+  [3, 2, 1]
+  
+  
+
+  [1, 2, 3, 2, 3, 4]
+
+
+
+
+
+
+  [2, 3, 4] -> [1, 5, 6]X
+  
+  
+  [1, 2, 3]
+  
+  n = 3
+  
+  freqMap : 
+  1 -> 0
+  2 > 0
+  3 > 0
+    
+  freq1
+  freq2
+  
+  public static boolean isGoldenArray(int arr[]) {
+  
+        
+        int n = arr.length;
+        
+        if (n < 3)
+          return false;
+        
+        Arrays.sort(arr);
+        Map<Integer, Integer> freqMap = new HashMap<>();
+        
+        for(int i=0;i<n;i++) {
+            freqMap.put(arr[i], freqMap.getOrDefault(arr[i],0) + 1);
+        }
+                
+        for(int i=n-1;i>1;i--) {
+          
+            int num = arr[i];
+            int freq1 = freqMap.getOrDefault(num-1);
+            int freq2 = freqMap.getOrDefault(num-2);
+            
+            if(freq1 == 0 || freq2 == 0) {
+                return false;
+            }
+            
+            freqMap.put(num, freqMap.getOrDefault(num));
+            freqMap.put(num-1, freq1-1);
+            freqMap.put(num-2, freq2-1);            
+        }
+        
+        for(Integer key : freqMap.keySet()){
+          
+            if(freqMap.get(key) != 0) {
+                return false;
+            }
+        
+        }
+        
+        return true;
+        
+  }
