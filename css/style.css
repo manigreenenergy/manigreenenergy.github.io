@@ -1,0 +1,113 @@
+.aboutus-heading {
+    position: relative;
+    background-image: url(../images/about-us-banner-1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 20%; 
+    background-position: center;
+    background-size: cover;
+    height: auto;
+/*    max-height: 200px;*/
+    .overlay-title {
+    font-size: 27px;
+    text-transform: uppercase;
+    }
+
+}
+.about-heading {
+
+    background-image: url(../images/logo/logo-color.png);
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+
+}
+
+/* About us page meet the team style starts */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.pt-5 {
+    padding-top: 3rem !important;
+}
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+.border-0 {
+    border: 0 !important;
+}
+.position-relative {
+    position: relative !important;
+}
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%) !important;
+}
+.card {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+}
+
+.member-profile {
+    top: -50px;
+    left: 0;
+}
+.text-center {
+    text-align: center !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.position-absolute {
+    position: absolute !important;
+}
+
+.member-profile img {
+    width: 100px;
+    height: 100px;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
+}
+
+
+/* About us page meet the team style ends */
+
+
+.vision {
+    text-align: center;
+    background-color: blue;
+}
+
+
+.vision-box {
+    display: block;
+    background: #000066;
+    padding: 40px 20px 37px;
+    text-align: center
+}
+
+.vision-box p {
+    margin: 5px 0 0;
+    padding: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500
+}
